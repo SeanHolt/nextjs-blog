@@ -3,14 +3,29 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
+    "@libsql/client": "^0.15.7",
+    "date-fns": "^4.1.0",
+    "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "@vercel/postgres": "^0.10.0",
+    "dotenv": "^16.5.0",
+    "drizzle-kit": "^0.31.1",
+    "drizzle-orm": "^0.44.0",
+    "eslint": "9.27.0",
+    "eslint-config-next": "15.3.2",
+    "postgres": "^3.4.7"
   }
 }
