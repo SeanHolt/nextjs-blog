@@ -36,7 +36,8 @@ export async function getStaticProps({ params }) {
       postData: {
         id: pd.id,
         contentHtml: pd.contentHtml,
-        date: pd.date
+        date: pd.date,
+        title: pd.title
       },
     },
   };

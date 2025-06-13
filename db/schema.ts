@@ -17,5 +17,6 @@ export const blogs = sqliteTable("blogs", {
     key: t.text("key").notNull().unique(),
     content: t.text("content").notNull(),
     date: t.text("date").notNull(),
+    title: t.text("title").default("Some dummy title").notNull(),
     userId: t.int("user_id").references(() => users.id).notNull(),
 })
